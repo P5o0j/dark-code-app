@@ -1,5 +1,7 @@
-.header {
+.logo-row,
+.menu-row {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   width: 100%;
@@ -9,9 +11,32 @@
   width: 350px;
   background-color: black;
 }
+.menu-item {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 1rem 0;
+  min-width: 33%;
+}
+.menu-item:hover {
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px 0 #ffffff;
+}
 
 @media only screen and (max-width: 600px) {
   .logo {
     width: 200px;
+  }
+  .menu-row {
+    flex-direction: column;
+  }
+  .menu-item {
+    /* background-color: yellowgreen; */
+    margin: 2px 0;
+    padding: 0.5rem 0;
+    border: 1px solid #ffffff;
+    width: 100%;
+    border-radius: 10px;
   }
 }
