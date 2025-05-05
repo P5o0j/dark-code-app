@@ -1,0 +1,13 @@
+.about {
+  background-color: #000000;
+}
+
+.row-right {
+  text-align: right;
+  margin-left: 30%;
+  padding: 2% 0;
+}
+
+.row-left {
+  margin-right: 30%;
+}
